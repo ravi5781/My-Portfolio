@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background: linear-gradient(120deg, #050505, #0b1d2d); */
   color: #fff;
   overflow-x: hidden;
   background: linear-gradient(135deg, #39037a, #033f76, #0078e0);
@@ -96,7 +95,6 @@ body {
   height: 450px;
   border-radius: 40%;
   background: linear-gradient(120deg, rgb(5, 76, 109), rgb(2, 2, 113));
-  /* border: 4px solid #00e0ff; */
   box-shadow: 0 0 30px rgba(0, 224, 255, 0.6);
 }
 
@@ -159,7 +157,6 @@ body {
 
 /* About */
 .about h2 {
-  /* background: #101820; */
   color: #00e0ff;
   font-size: 40px;
   text-align: center;
@@ -168,6 +165,7 @@ body {
 
 .about p {
   max-width: 700px;
+  text-align: justify;
   margin: auto;
   color: #b0bec5;
   line-height: 1.7;
@@ -177,7 +175,6 @@ body {
 .skills {
   padding: 80px 20px;
   text-align: center;
-  /* background: #0b111a; */
 }
 
 .skills h2 {
@@ -196,30 +193,12 @@ body {
 /* Scrolling track */
 .marquee-skills {
   display: flex;
-  animation: scroll-left 50s linear infinite;
+  animation: scroll-left 40s linear infinite;
   width: fit-content;
   gap: 20px;
 }
 
 /* Each skill card */
-.skill-card {
-  border-radius: 8px;
-  font-family: sans-serif;
-  font-size: 15px;
-  white-space: nowrap;
-}
-
-/* Scroll animation */
-@keyframes scroll-left {
-  0% {
-    transform: translateX(5%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 .skill-card {
   display: inline-block;
   background: #192b3f;
@@ -228,9 +207,21 @@ body {
   border-radius: 12px;
   padding: 15px 25px;
   margin: 10px;
+  white-space: nowrap;
   box-shadow: 0 0 15px rgba(60, 255, 0, 0.1);
   border: 2px solid rgba(0, 224, 255, 0.2);
   transition: all 0.5s;
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .skill-card-img {
@@ -289,7 +280,6 @@ body {
 }
 
 /*Education  */
-/* Section title */
 .section-title {
   text-align: center;
   font-size: 40px;
@@ -298,7 +288,6 @@ body {
   color: #00e0ff;
 }
 
-/* Container for cards and image */
 .education-body {
   display: flex;
   justify-content: space-between;
@@ -308,7 +297,6 @@ body {
   padding: 0 10%;
 }
 
-/* Left side (cards) */
 .education-cards {
   flex: 1;
   display: flex;
@@ -316,7 +304,6 @@ body {
   gap: 20px;
 }
 
-/* Single education card */
 .education-card {
   display: flex;
   align-items: center;
@@ -340,7 +327,6 @@ body {
 
 }
 
-/* Text details */
 .education-details h6 {
   margin: 0;
   font-size: 14px;
@@ -370,7 +356,6 @@ body {
 
 /* Projects */
 .projects {
-  /* background: #101820; */
   padding: 80px 40px;
   text-align: center;
   display: flex;
