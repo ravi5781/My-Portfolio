@@ -33,7 +33,6 @@ window.addEventListener("scroll", () => {
     "Backend Developer",
     "Frontend Developer",
     "Full Stack Developer",
-    "Graduate Engineer trainee",
     "Java Developer",
     "Software Engineer"
   ];
